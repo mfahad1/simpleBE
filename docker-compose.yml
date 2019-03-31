@@ -1,0 +1,19 @@
+version: "2"
+services:
+  fokal-app:
+    container_name: fokal-app
+    restart: always
+    build: .
+    ports:
+      - "8001:3000"
+    links:
+      - fokal-mongo
+    volumes:
+      - .:/usr/src/app
+  fokal-mongo:
+    container_name: fokal-mongo
+    image: mongo
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27020:27017"

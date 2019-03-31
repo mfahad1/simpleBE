@@ -1,0 +1,48 @@
+{
+  "name": "koa-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/index.js",
+    "debug": "nodemon --exec babel-node --inspect-brk=9229 src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^2.2.1",
+    "async-busboy": "^0.7.0",
+    "await-busboy": "^1.0.2",
+    "aws-sdk": "^2.339.0",
+    "http-server": "^0.11.1",
+    "koa": "^2.0.0-alpha.8",
+    "koa-body": "^4.0.4",
+    "koa-bodyparser": "^4.2.0",
+    "koa-compose": "^4.0.0",
+    "koa-jwt": "^3.3.0",
+    "koa-logger": "^3.2.0",
+    "koa-mongo": "^0.8.0",
+    "koa-mongoose": "^2.0.0",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.1.1",
+    "koa-static": "^5.0.0",
+    "mongoose": "^4.13.0",
+    "revalidator": "^0.3.1",
+    "shortid": "^2.2.13"
+  },
+  "apidoc": {
+    "title": "Custom apiDoc browser title",
+    "url": "http://localhost:3000/docs"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.7",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.24.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
